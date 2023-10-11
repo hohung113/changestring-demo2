@@ -2,10 +2,10 @@ function replaceWordsWithFont() {
     var inputText = document.getElementById('inputText').value;
     var resultText = document.getElementById('resultText');
     
-    // Thêm dấu xuống dòng sau dấu chấm nếu có khoảng trắng
+  
     inputText = inputText.replace(/\.\s/g, '.<br>');
 
-    // Thay thế ký tự xuống hàng bằng <br>
+    
     inputText = inputText.replace(/\n/g, '<br>');
 
     var convertedText = inputText.split('<br>').map(function(sentence) {
